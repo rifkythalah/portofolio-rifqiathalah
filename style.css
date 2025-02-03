@@ -1,0 +1,640 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap");
+
+/* icon */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --mainColor: #0f1729;
+  --secondaryColor: #0f2d41;
+  --acsentColor: #0cafe3;
+  --textColor: #fff;
+  --darkColor: #000000;
+  --abuColor: #747474;
+  --navbarColor: #92a8c8;
+  --navbarporto: #d8e6fb;
+  --textColor: #d0ebfb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section h1 {
+  color: var(--textColor);
+  font-size: 2.5rem;
+}
+section {
+  padding-top: 5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Poppins", serif;
+  background-color: var(--mainColor);
+}
+
+/* Navbar */
+
+.nav-link.active {
+  color: var(--acsentColor) !important;
+  font-weight: 700;
+}
+
+.nav-dark {
+  background-color: var(--secondaryColor) !important;
+  z-index: 10;
+  transition: 0.5s;
+}
+
+.navbar-nav .nav-link {
+  color: var(--navbarColor) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--acsentColor) !important;
+}
+
+.navbar-brand {
+  color: var(--navbarporto) !important;
+}
+
+/* Navbar end */
+
+/* Hero section */
+#hero span {
+  color: var(--acsentColor);
+}
+
+#hero {
+  color: var(--textColor);
+  min-height: 100vh;
+  padding-top: 85px;
+}
+
+#hero .box-shadow {
+  z-index: -1;
+  margin-left: -110px;
+  margin-top: -100px;
+}
+
+#hero .social-icon a {
+  color: var(--navbarColor) !important;
+  font-size: 130%;
+}
+#hero .social-icon a:hover {
+  color: var(--acsentColor) !important;
+}
+#hero h1 {
+  font-size: 3rem;
+  color: var(--textColor);
+}
+
+#hero .web {
+  color: var(--acsentColor);
+}
+
+#hero h2 {
+  font-weight: 300;
+}
+
+#hero img {
+  box-shadow: 11px 12px 104px rgba(0, 0, 0, 0.8) inset;
+  border-radius: 70px;
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+#hero p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--textColor);
+}
+
+#hero .btn-custom {
+  background-color: var(--acsentColor);
+  color: var(--textColor);
+  border-radius: 8px;
+}
+
+#hero .btn-custom:hover {
+  background-color: var(--acsentColor);
+  color: var(--mainColor);
+  box-shadow: 0 0 5px rgba(9, 181, 255, 0.8);
+}
+
+#hero .social-icon {
+  font-size: 20px;
+  padding-top: 10px;
+}
+/* Hero section end */
+
+/* About */
+#about .fotoshadow {
+  width: 900px !important;
+}
+
+#about hr {
+  height: 3px;
+  width: 20%;
+  color: var(--navbarColor);
+  margin: 0 auto;
+  opacity: 30%;
+}
+
+#about h2 {
+  color: var(--acsentColor);
+  padding-top: 20px;
+}
+
+#about p {
+  color: var(--navbarColor);
+  padding-top: 15px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 30px;
+}
+
+/* About end */
+
+/* Resume */
+#resume hr {
+  height: 3px;
+  width: 20%;
+  color: var(--navbarColor);
+  margin: 0 auto;
+  opacity: 30%;
+}
+
+#resume .riwayat {
+  color: var(--acsentColor);
+}
+
+#resume .education {
+  color: var(--textColor);
+}
+/* Resume end */
+
+/* Pengalaman */
+
+#pengalaman {
+  padding-top: 30px;
+}
+
+#pengalaman h3 {
+  color: var(--textColor);
+}
+
+#pengalaman hr {
+  color: var(--navbarColor);
+  opacity: 30%;
+  height: 2px;
+}
+
+#pengalaman h4 {
+  color: var(--acsentColor);
+}
+#pengalaman h4:hover {
+  color: var(--navbarColor);
+}
+
+#pengalaman p {
+  list-style: inside;
+  color: var(--textColor);
+}
+
+#pengalaman ul li {
+  font-size: 15px;
+  color: var(--navbarColor);
+}
+
+#pengalaman .btn-custom {
+  border: none;
+  color: var(--textColor);
+}
+
+#pengalaman a:link {
+  text-decoration: none;
+  color: var(--textColor) !important;
+}
+a:visited {
+  color: var(--acsentColor);
+}
+
+a:hover {
+  color: var(--acsentColor);
+}
+
+#gallery-sertiflsp:hover {
+  color: var(--navbarColor);
+}
+#gallery-sertifpkl:hover {
+  color: var(--navbarColor);
+}
+#gallery-sertifmedia:hover {
+  color: var(--navbarColor);
+}
+#gallery-sertifhimpunan:hover {
+  color: var(--navbarColor);
+}
+
+a:active {
+  color: var(--navbarColor);
+}
+
+#pengalaman .btn-custom:hover {
+  border: none;
+  color: var(--acsentColor);
+  box-shadow: 0 0 5px rgba(9, 181, 255, 0.8);
+}
+/* Pengalaman end*/
+
+/* Portofolio */
+#portofolio hr {
+  height: 3px;
+  width: 20%;
+  color: var(--navbarColor);
+  margin: 0 auto;
+  opacity: 30%;
+}
+ 
+#portofolio a {
+  text-decoration: none;
+}
+/* 
+#portofolio a:link {
+  text-decoration: none;
+  color: var(--textColor) !important;
+}
+#portofolio a:visited {
+  color: var(--acsentColor);
+}
+
+#portofolio a:hover {
+  color: var(--mainColor);
+}
+
+#portofolio a:active {
+  color: var(--navbarColor);
+} */
+
+.portofoliomodal {
+  color: var(--acsentColor);
+}
+
+.modalporto {
+  color: var(--darkColor);
+}
+/* Portofolio end*/
+
+/* skills */
+#skills hr {
+  height: 3px;
+  width: 15%;
+  color: var(--navbarColor);
+  margin: 0 auto;
+  opacity: 30%;
+}
+
+#skills .container {
+  padding: 20px;
+}
+
+#skills .card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#skills .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+#skills .rounded-circle {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+#skills .card {
+  background-color: var(--secondaryColor);
+  border: 1px solid var(--navbarColor);
+  cursor: pointer;
+}
+
+#skills .card:hover {
+  box-shadow: 0px 3px 20px hsla(0, 0%, 100%, 0.2);
+}
+
+#skills .card-text {
+  margin: 0;
+  font-size: 15px;
+  color: var(--textColor);
+}
+#skills .d-flex {
+  display: flex;
+  align-items: center;
+}
+
+#skills .me-3 {
+  margin-right: 15px;
+}
+
+/* skills end */
+
+/* Contact */
+
+#contact h3 {
+  color: var(--textColor);
+}
+
+#contact .social-icon a {
+  color: var(--navbarColor) !important;
+  font-size: 180%;
+}
+#contact .social-icon a:hover {
+  color: var(--acsentColor) !important;
+}
+#contact .col-12 {
+  text-align: center;
+}
+/* Contact end */
+
+/* footer */
+footer {
+  background-color: var(--secondaryColor);
+}
+
+footer p {
+  color: var(--navbarColor);
+}
+
+/* footer end */
+
+/* css working */
+
+/* working */
+
+#working h4 {
+  color: var(--acsentColor);
+}
+
+#working .text-start,
+p {
+  color: var(--textColor);
+}
+
+#working a:link {
+  text-decoration: none;
+}
+
+#working i {
+  padding-left: 10px;
+}
+
+/* working end */
+
+/* css working */
+
+/* css bootcamp */
+
+/* bootcamp */
+#bootcamp .bootcamp {
+  color: var(--acsentColor);
+}
+
+#bootcamp .juara {
+  text-align: justify;
+}
+
+/* bootcamp end */
+
+/* css bootcamp end */
+
+/* css organisai */
+
+/* organisasi */
+
+#organisasi h4 {
+  color: var(--acsentColor);
+  margin-top: 10px;
+}
+
+#organisasi .list {
+  color: var(--textColor);
+}
+
+#himpunan .himpunan {
+  color: var(--acsentColor);
+}
+
+#himpunan .panitia {
+  color: var(--acsentColor);
+}
+
+#himpunan ul li {
+  color: var(--textColor);
+}
+
+#himpunan .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#himpunan .swiper-slide {
+  text-align: center;
+  font-size: 5px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#himpunan .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#himpunan .autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+#himpunan .autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+
+/* organisasi end */
+
+/* css organisai end */
+
+/* Scroll Top */
+
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: var(--navbarColor);
+}
+
+/* Scroll Top end*/
+
+/* modal pop up */
+
+/* modal pop up end */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575px) {
+  #skills .row.justify-content-center.my-5 {
+    margin-top: 3px !important;
+    margin-bottom: 3px !important;
+  }
+
+  #skills .col-6 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  #working .work {
+    font-size: 30px;
+  }
+
+  #working .row {
+    text-align: center;
+    justify-content: center;
+  }
+
+  #working .jakarta {
+    text-align: justify !important;
+  }
+
+  #working .col-lg-6,
+  #working .col-lg-5 {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #working .psik {
+    font-size: 20px;
+  }
+  #working .psik-swiper .swiper-slide {
+    width: 50% !important;
+  }
+
+  #working .psik-swiper .card-img-top {
+    width: 90%;
+    height: auto;
+  }
+
+  #bootcamp .bootcamp {
+    margin-top: 15px;
+  }
+
+  #bootcamp img {
+    margin-left: -20px;
+  }
+
+  #organisasi .organisasi {
+    text-align: center;
+  }
+
+  #himpunan .himpunan {
+    text-align: center;
+  }
+
+  #himpunan .psdm {
+    text-align: justify;
+  }
+
+  #organisasi h1 {
+    font-size: 25px;
+  }
+  #bootcamp .juara {
+    margin-left: 10px;
+    text-align: justify;
+  }
+
+  #organisasi .text-end {
+    margin-top: 30px;
+  }
+
+  #organisasi .kajian {
+    margin-top: -30px !important;
+  }
+
+  #organisasi .kastrat {
+    text-align: justify;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #hero h1 {
+    margin-top: 100px !important;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #hero .box-shadow {
+    margin-left: -200px;
+    margin-top: -100px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid var(--navbarColor);
+    width: 50%;
+    margin: auto;
+    margin-bottom: -8px;
+  }
+
+  section {
+    padding-top: 5rem;
+  }
+}
