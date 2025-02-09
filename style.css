@@ -166,8 +166,7 @@ body {
 #about p {
   color: var(--navbarColor);
   padding-top: 15px;
-  text-align: justify;
-  text-indent: 20px;
+  text-align: left;
   line-height: 30px;
 }
 
@@ -397,6 +396,10 @@ footer p {
   color: var(--acsentColor);
 }
 
+#working h1{
+  color: var(--textColor) !important;
+}
+
 #working .text-start,
 p {
   color: var(--textColor);
@@ -421,9 +424,18 @@ p {
   color: var(--acsentColor);
 }
 
-#bootcamp .juara {
-  text-align: justify;
+#bootcamp img{
+  width: 700px;
 }
+
+#bootcamp h1{
+  color: var(--textColor) !important;
+}
+
+#bootcamp ul li{
+  color: var(--textColor);
+}
+
 
 /* bootcamp end */
 
@@ -533,6 +545,10 @@ p {
     margin-bottom: 3px !important;
   }
 
+  #pengalaman h4{
+    font-size: 90% !important;
+  }
+
   #skills .col-6 {
     margin-top: 15px;
     margin-bottom: 10px;
@@ -548,7 +564,7 @@ p {
   }
 
   #working .jakarta {
-    text-align: justify !important;
+    text-align: left !important;
   }
 
   #working .col-lg-6,
@@ -570,13 +586,6 @@ p {
     height: auto;
   }
 
-  #bootcamp .bootcamp {
-    margin-top: 15px;
-  }
-
-  #bootcamp img {
-    margin-left: -20px;
-  }
 
   #organisasi .organisasi {
     text-align: center;
@@ -587,7 +596,7 @@ p {
   }
 
   #himpunan .psdm {
-    text-align: justify;
+    text-align: start;
   }
 
   #organisasi h1 {
@@ -595,7 +604,7 @@ p {
   }
   #bootcamp .juara {
     margin-left: 10px;
-    text-align: justify;
+    text-align: left;
   }
 
   #organisasi .text-end {
@@ -607,7 +616,7 @@ p {
   }
 
   #organisasi .kastrat {
-    text-align: justify;
+    text-align: start;
   }
 }
 
@@ -620,9 +629,17 @@ p {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  #about p {
+    text-indent: 20px;
+  }
   #hero .box-shadow {
     margin-left: -200px;
     margin-top: -100px;
+  }
+
+  #bootcamp img{
+    height: 420px;
   }
 
   .nav-link:hover::after {

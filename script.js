@@ -67,5 +67,15 @@ document.addEventListener("click", function (e) {
     }
   });
   
+// pop up sertif Bem
+document.addEventListener("click", function (e) {
+    if (e.target.id === "gallery-sertifbem") {
+      const src = e.target.getAttribute("data-src");
+      document.querySelector(".modal-bem").src = src;
+      const myModal = new bootstrap.Modal(document.getElementById("gallery-bem"));
+      myModal.show();
+    }
+  });
+  
 
 
